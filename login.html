@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantin Sehat - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <div class="login-header">
+                <div class="logo">
+                    <i class="fas fa-leaf"></i>
+                    <h1>Kantin Sehat</h1>
+                </div>
+                <p>Masuk Ke Akun Anda Untuk Memesan Di Kantin Sehat</p>
+            </div>
+            
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="username"><i class="fas fa-user"></i> Username</label>
+                    <input type="text" id="username" name="username" placeholder="Masukkan username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password"><i class="fas fa-lock"></i> Password</label>
+                    <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+                </div>
+                
+                <button type="submit" class="btn-login">
+                    <i class="fas fa-sign-in-alt"></i> Masuk <a href="menu.html"></a>
+                </button>
+                
+                <div class="login-footer">
+                    <p>Atau masuk sebagai <a href="menu.html" class="guest-link">Tamu</a></p>
+                </div>
+            </form>
+            
+            <div class="register-form" id="registerForm" style="display: none;">
+                <h2>Daftar Akun Baru</h2>
+                <form id="registerFormContent">
+                    <div class="form-group">
+                        <label for="regUsername"><i class="fas fa-user"></i> Username</label>
+                        <input type="text" id="regUsername" name="regUsername" placeholder="Buat username" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="regPassword"><i class="fas fa-lock"></i> Password</label>
+                        <input type="password" id="regPassword" name="regPassword" placeholder="Buat password" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="regConfirmPassword"><i class="fas fa-lock"></i> Konfirmasi Password</label>
+                        <input type="password" id="regConfirmPassword" name="regConfirmPassword" placeholder="Konfirmasi password" required>
+                    </div>
+                    
+                    <button type="submit" class="btn-register">
+                        <i class="fas fa-user-plus"></i> Daftar
+                    </button>
+                    
+                    <div class="register-footer">
+                        <p>Sudah punya akun? <a href="#" id="backToLogin">Kembali ke Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Kantin Sehat</h3>
+                <p>Tersedia Untuk Memenuhi Kebutuhan Anda</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-bolt"></i>
+                <h3>Proses Cepat</h3>
+                <p>Pesanan Anda Akan Disiapkan Dengan Cepat dan Efisien</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-leaf"></i>
+                <h3>Ramah Lingkungan</h3>
+                <p>Kami Menggunakan Kemasan Ramah Lingkungan</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantin Sehat - Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <i class="fas fa-leaf"></i>
+                <h1>Kantin Sehat</h1>
+            </div>
+            <div class="nav-links">
+                <a href="login.html"><i class="fas fa-sign-out-alt"></i> Keluar</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <div class="page-header">
+            <h2>Menu Kantin Sehat</h2>
+            <p>Pilih menu favorit Anda dan pesan sekarang</p>
+        </div>
+        
+        <div class="menu-container">
+            <div class="menu-card">
+                <div class="menu-image" style="background-color: white; background-image: url('img/aqua.jpg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+
+                </div>
+                <div class="menu-info">
+                    <h3>Aqua</h3>
+                    <p class="menu-desc">Air Putih Yang Menyegarkan</p>
+                    <div class="menu-details">
+                        <span class="price">Rp 4.000</span>
+                        <span class="size"><i class="fas fa-weight"></i> 600Ml</span>
+                    </div>
+                    <button class="btn-select" data-id="1" data-name="Aqua" data-price="4000">
+                        <i class="fas fa-cart-plus"></i> Pilih
+                    </button>
+                </div>
+            </div>
+            
+            <div class="menu-card">
+                <div class="menu-image" style="background-color:white; background-image: url('img/milo.jpg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+                </div>
+                <div class="menu-info">
+                    <h3>Milo</h3>
+                    <p class="menu-desc">Minuman Cokelat yang Enak</p>
+                    <div class="menu-details">
+                        <span class="price">Rp 6.000</span>
+                        <span class="size"><i class="fas fa-weight"></i> 180Ml</span>
+                    </div>
+                    <button class="btn-select" data-id="2" data-name="Milo" data-price="6000">
+                        <i class="fas fa-cart-plus"></i> Pilih
+                    </button>
+                </div>
+            </div>
+            
+            <div class="menu-card">
+                <div class="menu-image" style="background-color: white; background-image: url('img/sari\ roti\ 2.jpg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+                    
+                </div>
+                <div class="menu-info">
+                    <h3>Sari Roti Tawar Kupas</h3>
+                    <p class="menu-desc">Roti Tawar Kupas</p>
+                    <div class="menu-details">
+                        <span class="price">Rp 12.000</span>
+                        <span class="size"><i class="fas fa-weight"></i> 250g</span>
+                    </div>
+                    <button class="btn-select" data-id="3" data-name="Sandwich Gandum" data-price="28000">
+                        <i class="fas fa-cart-plus"></i> Pilih
+                    </button>
+                </div>
+            </div>
+            
+            <div class="menu-card">
+                <div class="menu-image" style="background-color: white; background-image: url('img/beng-beng.jpg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+                    
+                </div>
+                <div class="menu-info">
+                    <h3>Beng Beng Wafer</h3>
+                    <p class="menu-desc">Wafer Cokelat yang Renyah dan Lezat</p>
+                    <div class="menu-details">
+                        <span class="price">Rp 3.500</span>
+                        <span class="size"><i class="fas fa-weight"></i> 20 G</span>
+                    </div>
+                    <button class="btn-select" data-id="4" data-name="BengBeng" data-price="3500">
+                        <i class="fas fa-cart-plus"></i> Pilih
+                    </button>
+                </div>
+            </div>
+            
+            <div class="menu-card">
+                <div class="menu-image" style="background-color: white; background-image: url('img/popmiemini.jpg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+                    <i class=""></i>
+                </div>
+                <div class="menu-info">
+                    <h3>Pop Mie Mini</h3>
+                    <p class="menu-desc">Pop Mie Ukuran Mini</p>
+                    <div class="menu-details">
+                        <span class="price">Rp 7.000</span>
+                        <span class="size"><i class="fas fa-weight"></i> 75 g</span>
+                    </div>
+                    <button class="btn-select" data-id="5" data-name="Popmiemini" data-price="7000">
+                        <i class="fas fa-cart-plus"></i> Pilih
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cart-info">
+            <p>Anda telah memilih <span id="selectedCount">0</span> produk</p>
+            <a href="transaksi.html" class="btn-proceed" id="proceedBtn">
+                <i class="fas fa-arrow-right"></i> Lanjut ke Transaksi
+            </a>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Kantin Sehat- Makan Sehat, Hidup Sehat</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

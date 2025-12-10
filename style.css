@@ -1,0 +1,652 @@
+/* Reset dan Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Login Styles */
+.login-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: white;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.logo i {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-right: 0.5rem;
+}
+
+.logo h1 {
+    font-size: 2.2rem;
+    color: #2E7D32;
+    font-weight: 700;
+}
+
+.login-header p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.login-form, .register-form {
+    width: 100%;
+    max-width: 400px;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.register-form h2 {
+    color: #2E7D32;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.form-group label i {
+    margin-right: 0.5rem;
+    color: #4CAF50;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, .form-group select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.btn-login, .btn-register, .btn-select, .btn-proceed, .btn-save-transaction, .btn-back-to-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.9rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.btn-login i, .btn-register i, .btn-select i, .btn-proceed i, .btn-save-transaction i, .btn-back-to-menu i {
+    margin-right: 0.5rem;
+}
+
+.btn-login:hover, .btn-register:hover {
+    background-color: #388E3C;
+}
+
+.login-footer, .register-footer {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.login-footer a, .register-footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-footer a:hover, .register-footer a:hover {
+    text-decoration: underline;
+}
+
+.guest-link {
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.guest-link:hover {
+    text-decoration: none;
+}
+
+/* Features */
+.features {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+}
+
+.feature {
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.feature i {
+    font-size: 3rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+.feature h3 {
+    color: #2E7D32;
+    margin-bottom: 0.5rem;
+}
+
+.feature p {
+    color: #666;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo i {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-right: 0.5rem;
+}
+
+.nav-logo h1 {
+    font-size: 1.8rem;
+    color: #2E7D32;
+}
+
+.nav-links a {
+    margin-left: 1.5rem;
+    color: #555;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #4CAF50;
+}
+
+.nav-links a i {
+    margin-right: 0.3rem;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.page-header h2 {
+    color: #2E7D32;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Menu Container */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.menu-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.memu-image img{
+    display: none;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-image{
+    position: relative;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.menu-image {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-image i {
+    font-size: 4rem;
+    color: #4CAF50;
+}
+
+.menu-info {
+    padding: 1.5rem;
+}
+
+.menu-info h3 {
+    color: #2E7D32;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.menu-desc {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    height: 40px;
+    overflow: hidden;
+}
+
+.menu-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #E91E63;
+}
+
+.size {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.size i {
+    margin-right: 0.3rem;
+}
+
+.btn-select {
+    background-color: #4CAF50;
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-select:hover {
+    background-color: #388E3C;
+}
+
+/* Cart Info */
+.cart-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-top: 2rem;
+}
+
+.cart-info p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#selectedCount {
+    font-weight: 700;
+    color: #E91E63;
+}
+
+.btn-proceed {
+    width: auto;
+    padding: 0.8rem 2rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-proceed:hover {
+    background-color: #388E3C;
+}
+
+/* Transaction Container */
+.transaction-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.transaction-form, .transaction-history {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.transaction-form h3, .transaction-history h3 {
+    color: #2E7D32;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.transaction-form h3 i, .transaction-history h3 i {
+    margin-right: 0.5rem;
+}
+
+/* Selected Products */
+.selected-products {
+    margin-bottom: 2rem;
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.product-item:last-child {
+    border-bottom: none;
+}
+
+.product-info h4 {
+    color: #333;
+    margin-bottom: 0.3rem;
+}
+
+.product-info p {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.product-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.quantity-control button {
+    width: 30px;
+    height: 30px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.quantity-control button:hover {
+    background-color: #e0e0e0;
+}
+
+.quantity-control span {
+    margin: 0 0.5rem;
+    min-width: 30px;
+    text-align: center;
+}
+
+.product-price {
+    font-weight: 600;
+    color: #E91E63;
+    min-width: 100px;
+    text-align: right;
+}
+
+.empty-cart, .empty-history {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #999;
+}
+
+.empty-cart i, .empty-history i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+.btn-back-to-menu {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-back-to-menu:hover {
+    background-color: #388E3C;
+}
+
+/* Transaction Summary */
+.transaction-summary {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+}
+
+.summary-item.total {
+    border-top: 1px solid #ddd;
+    padding-top: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2E7D32;
+}
+
+/* Transaction History */
+.history-item {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 0.5rem;
+}
+
+.history-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.history-header h4 {
+    color: #333;
+}
+
+.history-date {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.history-details {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.history-total {
+    font-weight: 600;
+    color: #E91E63;
+    margin-top: 0.3rem;
+}
+
+.transaction-notice {
+    text-align: center;
+    padding: 1rem;
+    background-color: #FFF9C4;
+    border-radius: 10px;
+    margin-top: 2rem;
+    color: #8a6d3b;
+}
+
+.transaction-notice i {
+    margin-right: 0.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: #666;
+    background-color: white;
+    border-top: 1px solid #eee;
+    margin-top: 2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .transaction-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .features {
+        order: -1;
+        padding: 2rem 1rem;
+    }
+    
+    .feature {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .nav-links {
+        margin-top: 1rem;
+    }
+    
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .cart-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .btn-proceed {
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .login-container, .main-content {
+        padding: 1rem;
+    }
+    
+    .login-form, .register-form, .transaction-form, .transaction-history {
+        padding: 1.5rem;
+    }
+}
